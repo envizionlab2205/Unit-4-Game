@@ -1,1 +1,63 @@
-unit-4-game
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Collector Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="header">
+      <h1>CrystalsCollector!</h1>
+    </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="card-body">
+        <p>A random number is shown when the game starts.</p>
+        <p>There are four crystals below.</p>
+        <p>Clicking a crystal adds a specific amount of points to the total score.</p>
+        <p>Win if total score matches the random number.</p>
+        <p>Lose if total score goes above the random number.</p>
+        <p>Value of each crystal is hidden until clicked on it.</p>
+        <p>Each time game begins a new ramdom number is shown.</p>
+      </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="numberbox"> <span id="randomNumber"></span>
+    </div>
+      
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="scoreboard">Wins: <span id="wins">0</span> Losses: <span id="losses">0</span>
+      </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="crystals">
+        <a id="green-crystal" class="hvr-pop"><img class="responsive" src="assets/images/greencrystal.png" alt="Green Crystal"></a>
+        <a id="yellow-crystal" class="hvr-pop"><img class="responsive" src="assets/images/yellowcrystal.png" alt="Yellow Crystal"></a>
+        <a id="blue-crystal" class="hvr-pop"><img class="responsive" src="assets/images/bluecrystal.png" alt="Blue Crystal"></a>
+        <a id="red-crystal" class="hvr-pop"><img class="responsive" src="assets/images/redcrystal.png" alt="Red Crystal"></a>
+      </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="current-score"><p>Your total score is: </p><span id="currentScore"></span>
+    </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="numberbox">0 <span id="number"></span>
+    </div>
+          
+</body>
+</html>
