@@ -1,63 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Crystal Collector Game</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="assets/javascript/game.js"></script>
+	<meta charset="UTF-8">
+	<title>Crystal Collector Game</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script> 
 </head>
 
 <body>
-  
-  <div class="container">
-    <div class="header">
-      <h1>CrystalsCollector!</h1>
-    </div>
+	
+	<h1 class="header">CrystalsCollector!</h1>
+	
+	<div class="instructions">
+		
+		<p>-You will be given a random number at the start of the game.</p>
 
-  <div class="container">
-    <div class="row">
-      <div class="card-body">
-        <p>A random number is shown when the game starts.</p>
-        <p>There are four crystals below.</p>
-        <p>Clicking a crystal adds a specific amount of points to the total score.</p>
-        <p>Win if total score matches the random number.</p>
-        <p>Lose if total score goes above the random number.</p>
-        <p>Value of each crystal is hidden until clicked on it.</p>
-        <p>Each time game begins a new ramdom number is shown.</p>
-      </div>
+		<p>-There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="numberbox"> <span id="randomNumber"></span>
-    </div>
-      
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="scoreboard">Wins: <span id="wins">0</span> Losses: <span id="losses">0</span>
-      </div>
-  
-  <div class="container">
-    <div class="row">
-      <div class="crystals">
-        <a id="green-crystal" class="hvr-pop"><img class="responsive" src="assets/images/greencrystal.png" alt="Green Crystal"></a>
-        <a id="yellow-crystal" class="hvr-pop"><img class="responsive" src="assets/images/yellowcrystal.png" alt="Yellow Crystal"></a>
-        <a id="blue-crystal" class="hvr-pop"><img class="responsive" src="assets/images/bluecrystal.png" alt="Blue Crystal"></a>
-        <a id="red-crystal" class="hvr-pop"><img class="responsive" src="assets/images/redcrystal.png" alt="Red Crystal"></a>
-      </div>
-  
-  <div class="container">
-    <div class="row">
-      <div class="current-score"><p>Your total score is: </p><span id="currentScore"></span>
-    </div>
+		<p>-You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
 
-  <div class="container">
-    <div class="row">
-      <div class="numberbox">0 <span id="number"></span>
-    </div>
-          
+		<p>-The value of each crystal is hidden from you until you click on it.</p>
+
+		<p>-Each time the game starts, the value of each crystal will change.</p>
+			
+	</div>
+	
+	<div class="row">
+		<div class="col-md-8">
+			<div class="randomNumber" id="random-number"></div>
+		</div>
+			
+		<div class="wlScore">
+			<div class="col-md-2">
+				<div class="wins" id="winsScore">Wins: 0</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="losses" id="lossesScore">Losses: 0</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="row">
+		<div class="col-md-8">
+			<div class="crystals">
+				<a><button id="greenCrystal" value="0" class="hvr-pop"><img class="responsive" id="icon1" src="assets/images/greencrystal.png" alt="Green Crystal"></button></a>
+				<a><button id="yellowCrystal" value="0" class="hvr-pop"><img class="responsive" id="icon1" src="assets/images/yellowcrystal.png" alt="Yellow Crystal"></button></a>
+				<a><button id="blueCrystal" value="0" class="hvr-pop"><img class="responsive" id="icon1" src="assets/images/bluecrystal.png" alt="Blue Crystal"></button></a>
+				<a><button id="redCrystal" value="0" class="hvr-pop"><img class="responsive"id="icon1" src="assets/images/redcrystal.png" alt="Red Crystal"></button></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-2">
+			<div class="totalScore" id="total-score">Your Total Score:</div>
+		</div>
+	</div>
+						
+	<div class="row">
+		<div class="col-md-2">
+			<div class="currentScore" id="current-score">0</div>
+		</div>
+	</div>
+							
+	<div class="clearfix"></div>
+
 </body>
 </html>
